@@ -4,17 +4,18 @@ html {
 }
 body{
 background-color:grey;
-  padding: 25px;
-  font-size: 1.6rem;
+  padding: 30px;
+  font-size: 1.2rem;
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black; 
-  background-color: grey;
 }
-.title {
-	color: #5C6AC4;
-}
+
+@media (max-width: 800px) {
+  .body {
+    padding:0px;
+  }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -79,7 +80,7 @@ form {
 margin-right:2%;
  list-style-type:none;
  display:flex;
- min-width:600px;
+max-width:100%;
 }
 
 .navwrapper li{
@@ -93,16 +94,17 @@ margin-right:10px;
 .contentwrapper{
 height:auto;
 min-height:500px;
-width:100%;
-min-width:300px;
 background-color: white;
 }
 
 .content{
-margin: 1rem 1rem 1rem 1rem;
+padding:5vw;
 }
 	
-}
+@media screen and (max-width: 800px) {
+  .contentwrapper {
+    width: 100%;
+  }
 
 .gallery{
   color:green;
